@@ -1,14 +1,7 @@
-/* eslint-disable valid-jsdoc */
-/**
- * indicar que hace la funcion
- * esto es un comentario en typedoc, https://typedoc.org/guides/
- */
+import {PrimeNumber} from './modificacionClase/PrintNumber';
 
-// eslint-disable-next-line require-jsdoc
-export function add(primerNumero: number, segundoNumero: number): number {
-  return primerNumero + segundoNumero;
-}
+const instanciaPrimeNumber = PrimeNumber.getPrimeNumberInstance();
+const lista:number[] = instanciaPrimeNumber.nPrimos(5);
 
-console.log(add(1, 7));
-console.log('Hola Mundo');
+console.log(lista);
 
